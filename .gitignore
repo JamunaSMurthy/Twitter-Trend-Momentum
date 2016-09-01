@@ -1,0 +1,50 @@
+# Maven
+target/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+pom.xml.tag
+pom.xml.releaseBackup
+release.properties
+.flattened-pom.xml
+
+# Gradle
+.gradle
+build/
+*.gradle
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+*.ipr
+*.iws
+
+# Spark
+.checkpoint/
+checkpoint/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+input/oAuth-tokens.txt
+
+# OS
+.DS_Store
+Thumbs.db
