@@ -1,0 +1,26 @@
+FROM bde2020/spark-submit:2.4.5-hadoop2.7
+
+# Install Maven and Scala
+RUN apt-get update && apt-get install -y maven scala && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy pom.xml first for dependency caching
+COPY pom.xml .
+
+# Copy source code
+COPY src ./src
+
+# Build application
+RUN mvn clean package -DskipTests
+
+# Create non-root user
+RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /app
+USER appuser
+
+# Run processor with Spark
+CMD ["spark-submit", "--class", "org.streaming.KafkaSparkProcessor", \
+    "--master", "local[6]", "--executor-memory", "5g", "--total-executor-cores", "6", \
+    "--packages", "org.apache.spark:spark-streaming-kafka-0-10_2.12:2.4.5,org.mongodb.spark:mongo-spark-connector_2.12:2.4.5", \
+    "target/twitter-trend-momentum-1.0.0.jar"]

@@ -1,0 +1,20 @@
+FROM maven:3.8.6-openjdk-8-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy pom.xml first for dependency caching
+COPY pom.xml .
+
+# Copy source code
+COPY src ./src
+
+# Build application
+RUN mvn clean package -DskipTests
+
+# Create non-root user
+RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /app
+USER appuser
+
+# Run producer
+ENTRYPOINT ["java", "-Xmx2g", "-cp", "target/classes:target/dependency/*", "org.streaming.KafkaTwitterProducer"]
