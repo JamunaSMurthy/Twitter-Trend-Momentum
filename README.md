@@ -103,7 +103,7 @@ Traditional trending tools show **what's popular**. This system shows **what's a
 
 ## 🏗 Architecture
 
-<img src="images/architecture.png" alt="Twitter Trend Momentum Architecture" width="100%">
+<img src="images/Architecture.png" alt="Twitter Trend Momentum Architecture" width="100%">
 
 **System Flow:**
 
