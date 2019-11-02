@@ -3,10 +3,25 @@
 
 Detect emerging trends by measuring **trend acceleration** (not just popularity). The system streams tweets from Twitter API, analyzes sentiment, and calculates momentum metrics to identify rapidly growing hashtags.
 
-> 📄 **Based on**: [A real-time twitter trend analysis and visualization framework](https://www.igi-global.com/article/a-real-time-twitter-trend-analysis-and-visualization-framework/222625) - Published in *International Journal on Semantic Web and Information Systems* (IJSWIS), 2019
+> 📄 **Based on**: [A real-time twitter trend analysis and visualization framework](https://www.igi-global.com/article/a-real-time-twitter-trend-analysis-and-visualization-framework/222625)
+>
+> Published in *International Journal on Semantic Web and Information Systems* (IJSWIS), 2019
 > 
-> Authors: Jamuna S Murthy, GM Siddesh, KG Srinivasa  
-> See [CITATIONS.md](CITATIONS.md) for full BibTeX citation
+> Authors: Jamuna S Murthy, GM Siddesh, KG Srinivasa
+>
+> **BibTeX Citation:**
+> ```bibtex
+> @article{murthy2019real,
+>   title={A real-time twitter trend analysis and visualization framework},
+>   author={Murthy, Jamuna S and Siddesh, GM and Srinivasa, KG},
+>   journal={International Journal on Semantic Web and Information Systems (IJSWIS)},
+>   volume={15},
+>   number={2},
+>   pages={1--21},
+>   year={2019},
+>   publisher={IGI Global Scientific Publishing}
+> }
+> ```
 
 ## 🚀 Quick Start (5 min)
 
