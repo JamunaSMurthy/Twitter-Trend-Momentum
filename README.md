@@ -331,8 +331,3 @@ For issues, feature requests, or questions:
 ## License
 MIT License - See [LICENSE](LICENSE)
 
----
-
-**Status**: ✅ Ready for use (requires Maven installation)  
-**Version**: 1.0.0  
-**Last Updated**: March 2024
