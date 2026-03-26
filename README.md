@@ -279,10 +279,7 @@ bash scripts/cleanup.sh
 ## 📚 Documentation
 
 - **[QUICKSTART.md](QUICKSTART.md)** - Fast setup reference
-- **[VERIFICATION.md](VERIFICATION.md)** - ✅ Academic paper compliance verification
 - **[ALGORITHM.md](ALGORITHM.md)** - Technical algorithm specification
-- **[CITATIONS.md](CITATIONS.md)** - Original paper BibTeX & citations
-- **[CHANGELOG.md](CHANGELOG.md)** - Version history & roadmap
 
 ---
 
